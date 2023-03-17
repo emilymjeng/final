@@ -1,0 +1,186 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+div.container{
+  width:100%;
+  margin:0 auto;
+  position: relative;
+ 
+}  
+nav{
+  background-color: rgb(255, 255, 255);
+}
+
+header ul{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+header li{
+  border: 2px solid white;
+  line-height: 6em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+  flex: 1;
+}
+header a{
+  color: rgb(91, 74, 49);
+  display: block;
+  font-size: 20px;
+}
+li.logo{
+  flex: 2;
+}
+li.logo a{
+  font-size: 36px;
+}
+
+.our-menu-header{
+  text-align: center;
+  color: rgb(162, 107, 4);
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgb(176, 145, 110);
+  color: rgb(83, 59, 3);
+  font-weight: 100;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.menu-item-text {
+  flex-grow: 1;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+  color: rgb(83, 59, 3);
+}
+
+.menu-item-description {
+  line-height: 1.6;
+  color: rgb(83, 59, 3);
+}
+
+.menu-item-price{
+  color:rgb(83, 59, 3);
+}
+
+
+
+
+footer{
+  background-color: rgb(142, 117, 85);
+  width: 100%;
+  line-height: 2em;
+}
+
+.contact ul{
+  text-align: left;
+  padding: 15px 50px;
+}
+.contact li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.contact a{
+  color: white;
+}
+
+
+.socials ul{
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.socials li{
+  display: inline-block
+}
+.socials a{
+  color: white;
+  padding-inline-end: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 760px){
+  li.logo a{
+    font-size: 25px;
+  }
+  
+}
+
+@media screen and (max-width: 530px){
+  nav{
+    background-color: rgb(112, 86, 47);
+  }
+  header ul{
+    display: block;
+  }
+  header li{
+    line-height: 2em;
+  }
+  header a{
+    color: white;
+  }
+  .logo{
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 991px) {
+  .menu {
+    font-size: 16px;
+  }
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}

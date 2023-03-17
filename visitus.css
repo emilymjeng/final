@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+div.container{
+  width:100%;
+  margin:0 auto;
+  position: relative;
+} 
+nav{
+  background-color: rgb(255, 255, 255);
+}
+
+header ul{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+header li{
+  border: 2px solid white;
+  line-height: 6em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+  flex: 1;
+}
+header a{
+  color: rgb(91, 74, 49);
+  display: block;
+  font-size: 20px;
+}
+li.logo{
+  flex: 2;
+}
+li.logo a{
+  font-size: 36px;
+}
+
+.visit-us-header{
+  text-align: center;
+  color: rgb(162, 107, 4);
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+main{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  margin: 5%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: rgb(83, 59, 3);
+  
+}
+.row{
+  width: 80%; 
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px 30px;
+}
+.row .left{
+  overflow: hidden;
+}
+.row .left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row .right{
+  display: flex;
+  align-items: center;
+}
+.row .right .content{
+  padding-left: 70px;
+}
+.row .right .content li{
+font-size: 16px;
+line-height: 2em;
+padding-bottom: 15px;
+}
+.row .right .content p{
+  text-align: center;
+  color: rgb(162, 107, 4);
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  font-size: 15px;
+  
+}
+
+
+
+
+footer{
+  background-color: rgb(142, 117, 85);
+  width: 100%;
+  line-height: 2em;
+}
+
+.contact ul{
+  text-align: left;
+  padding: 15px 50px;
+}
+.contact li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.contact a{
+  color: white;
+}
+
+
+.socials ul{
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.socials li{
+  display: inline-block
+}
+.socials a{
+  color: white;
+  padding-inline-end: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 760px){
+  li.logo a{
+    font-size: 25px;
+  }
+  
+}
+
+@media screen and (max-width: 530px){
+  nav{
+    background-color: rgb(112, 86, 47);
+  }
+  header ul{
+    display: block;
+  }
+  header li{
+    line-height: 2em;
+  }
+  header a{
+    color: white;
+  }
+  .logo{
+    display: none;
+  }
+  
+}
+
+@media (max-width: 760px){
+  .row .right .content{
+    padding-left: 0;
+  }
+}
+@media (max-width: 538px){
+  .row{
+    width: 90%;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.row .left img{
+  width: 90%;
+
+}
+}

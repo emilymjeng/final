@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.slideshow{
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.slideshow a{
+  flex-basis: auto;
+}
+.cycle-slideshow img{
+  width: 100%;
+  height: 100%;
+}
+div.container{
+  width:100%;
+  margin:0 auto;
+  position: relative;
+}
+nav{
+  background-color: rgb(255, 255, 255);
+}
+
+header ul{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+header li{
+  border: 2px solid white;
+  line-height: 6em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-variant: small-caps;
+  flex: 1;
+}
+header a{
+  color: rgb(91, 74, 49);
+  display: block;
+  font-size: 20px;
+}
+li.logo{
+  flex: 2;
+}
+li.logo a{
+  font-size: 36px;
+}
+
+div.left, div.middle, div.right{
+  width: 40%;
+}
+
+
+aside img{
+  width: 100%
+}
+aside{
+  display: flex; 
+  position: relative;
+}
+  
+.left button{
+  position: absolute;
+  top: 40%;
+  left: 9%;
+}
+.middle button{
+  position:absolute;
+  top: 40%;
+  left: 45%;
+}
+.right button{
+  position: absolute;
+  top: 40%;
+  right: 12%;
+}
+aside button{
+  background-color: rgb(142, 117, 85);
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 16px 30px;
+  border-style: solid;
+  border-radius: 0px;
+  border-color: white;
+  
+
+}
+aside button:hover{
+  background-color: white;
+  color: rgb(129,105,80);
+}
+
+
+footer{
+  background-color: rgb(142, 117, 85);
+  width: 100%;
+  line-height: 2em;
+}
+
+.contact ul{
+  text-align: left;
+  padding: 15px 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+.contact li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.contact a{
+  color: white;
+}
+
+
+.socials ul{
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.socials li{
+  display: inline-block
+}
+.socials a{
+  color: white;
+  padding-inline-end: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 760px){
+  li.logo a{
+    font-size: 25px;
+  }
+  .left button{
+    display: none;
+  }
+  .middle button{
+    display: none;
+  }
+  .right button{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 530px){
+  nav{
+    background-color: rgb(112, 86, 47);
+  }
+  header ul{
+    display: block;
+  }
+  header li{
+    line-height: 2em;
+  }
+  header a{
+    color: white;
+  }
+  .logo{
+    display: none;
+  }
+  
+}
+
